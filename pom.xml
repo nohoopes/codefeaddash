@@ -82,10 +82,7 @@
 
 
 	</dependencies>
-	<build>
-		<finalName>CodeFeDashBoardHostHeroku</finalName>
-		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
-				defaults (may be moved to parent pom) -->
+	<build>	
 			<plugins>
 				<plugin>
 					<groupId>com.heroku.sdk</groupId>
@@ -93,13 +90,9 @@
 					<version>3.0.3</version>
 
 					<configuration>
-						<processTypes>
-							<web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
-						</processTypes>
+						<appName>codefeadmin</appName>
 					</configuration>
 				</plugin>
 			</plugins>
-
-		</pluginManagement>
 	</build>
 </project>
