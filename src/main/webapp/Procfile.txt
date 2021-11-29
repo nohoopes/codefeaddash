@@ -1,1 +1,0 @@
-web: java -jar D:/subjects/web/CodeFeDashBoardHostHeroku/target/CodeFeDashBoardHostHeroku.war
