@@ -80,10 +80,10 @@
   position: absolute;
   z-index: 2;
   left: 50%;
-  top: 50%;
+  top: 350px;
   bottom: 100%;
   transform: translate(-50%,-50%);
-  width: 60%; 
+  width: 80%; 
   border-collapse: collapse;
   border-spacing: 0;
   box-shadow: 0 2px 15px rgba(64,64,64,.7);

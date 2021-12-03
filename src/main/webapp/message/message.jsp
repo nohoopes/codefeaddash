@@ -54,9 +54,9 @@
 			</tr>
 			<c:forEach var="item" items="${listMessage}">
 				<tr>
-					<td>${item.phone}</td>
-					<td>${item.name}</td>
-					<td>${item.email}</td>
+					<td>${item.conphone}</td>
+					<td>${item.conname}</td>
+					<td>${item.conmail}</td>
 					<td>${item.message}</td>
 				</tr>
 			</c:forEach>

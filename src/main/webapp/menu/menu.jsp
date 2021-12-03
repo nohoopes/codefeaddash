@@ -62,7 +62,7 @@
 					<td>${item.id}</td>
 					<td>${item.name}</td>
 					<td>${item.type}</td>
-					<td>${item.price}$</td>
+					<td>${item.price}Đ</td>
 					<td>${item.status}</td>
 					<td>${item.code}</td>
 					<td>${item.description}</td>

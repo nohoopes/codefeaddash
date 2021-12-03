@@ -49,7 +49,7 @@ public class LoginController extends HttpServlet {
             dispatcher.forward(request, response);
         } else {
         	request.setAttribute("mess", "wrong user or wrong password!!!");
-       	 RequestDispatcher dispatcher = request.getRequestDispatcher("login/login.jsp");
+       	 RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
             dispatcher.forward(request, response);
             throw new Exception("Login not successful..");
         }
