@@ -30,7 +30,7 @@
 			href="${pageContext.request.contextPath}/MessageController"> <i
 				class='bx bx-chat'></i> <span class="links_name">Messages</span>
 		</a> <span class="tooltip">Messages</span></li>
-		<li><a href="analytic/analytic.jsp"> <i
+		<li><a href="${pageContext.request.contextPath}/BillController"> <i
 				class='bx bx-pie-chart-alt-2'></i> <span class="links_name">Analytics</span>
 		</a> <span class="tooltip">Analytics</span></li>
 		<li><a
@@ -62,7 +62,7 @@
 					<td>${item.id}</td>
 					<td>${item.name}</td>
 					<td>${item.type}</td>
-					<td>${item.price}Đ</td>
+					<td>${item.price} VND</td>
 					<td>${item.status}</td>
 					<td>${item.code}</td>
 					<td>${item.description}</td>

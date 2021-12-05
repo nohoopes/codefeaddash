@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../style/analyticstyle.css">
+<link rel="stylesheet" href="style/analyticstyle.css">
 <link rel="icon" type="image/x-icon" href="image/logo2.png" />
 <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
 	rel='stylesheet'>
@@ -30,8 +30,8 @@
 			href="${pageContext.request.contextPath}/MessageController"> <i
 				class='bx bx-chat'></i> <span class="links_name">Messages</span>
 		</a> <span class="tooltip">Messages</span></li>
-		<li><a href="analytic.jsp"> <i class='bx bx-pie-chart-alt-2'></i>
-				<span class="links_name">Analytics</span>
+		<li><a href="${pageContext.request.contextPath}/BillController"> <i
+				class='bx bx-pie-chart-alt-2'></i> <span class="links_name">Analytics</span>
 		</a> <span class="tooltip">Analytics</span></li>
 		<li><a
 			href="${pageContext.request.contextPath}/FoodDrinkController"> <i
@@ -46,7 +46,28 @@
 	<!-- noi dung-->
 	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	<section class="home-section">
-	<h1>COMING SOON</h1>
+		<table>
+			<tr>
+				<th>id</th>
+				<th>Name</th>
+				<th>Address</th>
+				<th>Phone</th>
+				<th>Method</th>
+				<th>Status</th>
+				<th>Total</th>
+			</tr>
+			<c:forEach var="item" items="${listBill}">
+				<tr>
+					<td>${item.id}</td>
+					<td>${item.cusname}</td>
+					<td>${item.address}</td>
+					<td>${item.phone}</td>
+					<td>${item.method}</td>
+					<td>${item.status}</td>
+					<td>${item.total}</td>
+				</tr>
+			</c:forEach>
+		</table>
 	</section>
 
 	<script>

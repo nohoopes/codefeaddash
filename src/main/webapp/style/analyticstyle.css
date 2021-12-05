@@ -7,21 +7,61 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+#rotate{
+  vertical-align:top;
+	transform:rotate(7deg);
+  -ms-transform:rotate(90deg); /* IE 9 */
+  -moz-transform:rotate(90deg); /* Firefox */
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  -o-transform:rotate(90deg); /* Opera */
+  margin-top: 250px;
+  margin-left: -62px;
+  font-family: "Poppins" , sans-serif;
+  font-size: 20pt;
+  background: white;
+  }
+#submit{
+	margin-top: 520px;
+	color: white;
+	background: #300000;
+	margin-left: 200px;
+	font-size: 17pt;
+}
 .pannel {
-	content:"";
     margin-left: 30px;
     position:relative;
-    width: 500px;
-    height: 250px;
-    background: url(../image/comingsoon.png);
-    background-repeat: no-repeat;
+    width: 550px;
+    height: 650px;
+    background: rgba(255, 255, 255, 0.932);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+.pannel .input-item {
+        width: 90%;
+        height: 30px;
+        margin-right: auto;
+        margin-left: 4%;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        background-color: transparent;
+        font-family: Montserrat;
+        color: rgb(10, 10, 10);
+        font-size: 16px;
+        line-height: 15px;
+        font-weight: 400;
+        border: none;
+        outline: none;
+        border-bottom: black 1px solid;
+        margin-top: 8px;
+        margin-bottom: 6px;
+        
 }
 .container{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-left: 100px;
+  padding-left: 50px;
   padding-top: 50px;
 }
 .sidebar{
@@ -40,10 +80,10 @@
   position: absolute;
   z-index: 2;
   left: 50%;
-  top: 50%;
+  top: 350px;
   bottom: 100%;
   transform: translate(-50%,-50%);
-  width: 60%; 
+  width: 80%; 
   border-collapse: collapse;
   border-spacing: 0;
   box-shadow: 0 2px 15px rgba(64,64,64,.7);
