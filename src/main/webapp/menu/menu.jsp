@@ -47,6 +47,7 @@
 	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	<section class="home-section">
 		<a href="AddMenuController"><input type="button" value="  Add Menu  " id="rotate" /></a>
+		<div class="contianer">
 		<table>
 			<tr>
 				<th>id</th>
@@ -69,7 +70,7 @@
 				</tr>
 			</c:forEach>
 		</table>
-
+</div>
 	</section>
 
 	<script>

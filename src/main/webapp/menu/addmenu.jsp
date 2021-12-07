@@ -4,6 +4,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="../style/menustyle.css">
+<link rel="stylesheet" href="style/menustyle.css">
 <link rel="icon" type="image/x-icon" href="../image/logo2.png" />
 <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
 	rel='stylesheet'>
@@ -46,36 +47,61 @@
 	<!-- noi dung-->
 	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	<section class="home-section">
-		<form action="<%=request.getContextPath()%>/addmenu" method="post">
-			<div class="container">
+
+		<div class="container">
+			<form action="<%=request.getContextPath()%>/addmenu" method="post">
 				<div class="pannel">
 					<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Attributes</h1>
 					<br>
 					<p>&ensp;Name</p>
-					<input class="input-item" type="text" id="name" name="name" value=""><br>
-					<br>
+					<input class="input-item" type="text" id="name" name="name"
+						value=""><br>
+
 					<p>&ensp;Price</p>
-					<input class="input-item" type="text" id ="price" name="price" value=""><br>
-					<br>
+					<input class="input-item" type="text" id="price" name="price"
+						value=""><br>
+
 					<p>&ensp;Type</p>
-					<input class="input-item" type="text" id ="type "name="type" value=""><br>
-					<br>
+					<input class="input-item" type="text" id="type " name="type"
+						value=""><br>
+
 					<p>&ensp;Status</p>
-					<input class="input-item" type="text" id="status" name="status" value=""><br>
-					<br>
+					<input class="input-item" type="text" id="status" name="status"
+						value=""><br>
+
 					<p>&ensp;Code</p>
-					<input class="input-item" type="text" id="code" name="code" value=""><br>
-					<br>
+					<input class="input-item" type="text" id="code" name="code"
+						value=""><br>
+
 					<p>&ensp;Description</p>
-					<input class="input-item" type="text" id="description"name="description" value=""><br>
+					<input class="input-item" type="text" id="description"
+						name="description" value=""><br> <br>
 					<br>
+					<br> <input type="submit" value="  Add to Menu  " id="submit">
 				</div>
-				<div class="pannel">
-					<h1>Thêm hình(Coming Soon)</h1>
-					<input type="submit" value="  Add to Menu  " id="submit">
-				</div>
+			</form>
+
+			<div class="pannel">
+				<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Upload
+					Image</h1>
+				<div style="padding: 5px; color: red; font-style: italic;font-size: 20pt;">
+					&emsp;&emsp;&emsp;&emsp;&emsp;${errorMessage}</div>
+				<div style="padding: 5px; color: green; font-style: italic;font-size: 20pt;">
+					&emsp;&emsp;&emsp;&emsp;&emsp;${successMess}</div>
+
+				<form method="post"
+					action="${pageContext.request.contextPath}/uploadFile" enctype="multipart/form-data">
+					<br>
+					<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Select file to upload <br /></p> 
+					&emsp;<input type="file" name="file" /><br /> <br>
+					&emsp;<input type="file" name="file" /><br /> <br>
+					&emsp;<input type="file" name="file" /><br /> <br>
+					&emsp;<input type="file" name="file" /><br /> <br>
+					&emsp;<input type="file" name="file" /><br /> <br>
+					&emsp;<input type="submit" value="    Upload   " id="submit"/>
+				</form>
 			</div>
-		</form>
+		</div>
 	</section>
 
 	<script>

@@ -1,5 +1,4 @@
 <web-app>
-	
 	<display-name>admin dashboard</display-name>
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
@@ -84,7 +83,6 @@
 		<servlet-name>FoodDrinkController</servlet-name>
 		<url-pattern>/FoodDrinkController</url-pattern>
 	</servlet-mapping>
-
 	<servlet-mapping>
 		<servlet-name>NumberController</servlet-name>
 		<url-pattern>/NumberController</url-pattern>
