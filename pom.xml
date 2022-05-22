@@ -90,7 +90,7 @@
 					<version>3.0.3</version>
 
 					<configuration>
-						<appName>codefeadmin</appName>
+						<appName>codefead</appName>
 					</configuration>
 				</plugin>
 			</plugins>
