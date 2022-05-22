@@ -36,7 +36,7 @@ public class CustomerDAO {
     }
 
     /**
-     * Get all products
+     * Get all customer
      * @return
      */
     @SuppressWarnings("unchecked")

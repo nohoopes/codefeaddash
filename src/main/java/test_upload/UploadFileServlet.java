@@ -20,6 +20,7 @@ public class UploadFileServlet extends HttpServlet {
    private static final long serialVersionUID = 1L;
 
    public static final String SAVE_DIRECTORY = "Product_img";
+  // public static final String SAVE_DIRECTORY = "D:\\subjects\\web\\CodeFeDashBoardHostHeroku\\src\\main\\webapp\\Product_img";
    
    public UploadFileServlet() {
        super();
@@ -47,18 +48,18 @@ public class UploadFileServlet extends HttpServlet {
            appPath = appPath.replace('\\', '/');
 
  
-           // 
+           
 			
-			 String fullSavePath = null; if (appPath.endsWith("/")) { fullSavePath =
-			  appPath + SAVE_DIRECTORY; } else { fullSavePath = appPath + "/" +
-			  SAVE_DIRECTORY; }
+          String fullSavePath = null; if (appPath.endsWith("/")) { fullSavePath =
+		  appPath + SAVE_DIRECTORY; } else { fullSavePath = appPath + "/" +
+		  SAVE_DIRECTORY; }
 			 
-//           String fullSavePath = null;
-//           if (appPath.endsWith("/")) {
-//               fullSavePath = SAVE_DIRECTORY;
-//           } else {
-//               fullSavePath = SAVE_DIRECTORY;
-//           }
+           //String fullSavePath = null;
+           //if (appPath.endsWith("/")) {
+              // fullSavePath = SAVE_DIRECTORY;
+          // } else {
+             //  fullSavePath = SAVE_DIRECTORY;
+          // }
            // 
            File fileSaveDir = new File(fullSavePath);
            if (!fileSaveDir.exists()) {
